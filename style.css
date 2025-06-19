@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+:root {
+  --primary-text-color: white;
+  --secondary-text-color: black;
+  --accent-color: ;
+  --accent-color-dark: ;
+  --padding-inline-section: ;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-container {
+  height: 90vh;
+  background: url("https://itmp.msu.ru/assets/components/phpthumbof/cache/image-08-11-21-12-52.fe5871917e0ade869b1ceadbf257f4d91896.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#title {
+  font-size: 12px;
+  color: #fff;
+}
+
+#inner-box {
+  max-width: 380px;
+  background: rgb(226, 215, 255);
+  padding: 20px;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.114);
+}
+#input-box {
+  gap: 10px;
+  border: solid 2px rgb(178, 170, 200);
+  padding: 40px 5px;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+#input-box input {
+  width: 50%;
+  height: 100%;
+}
+
+.btn-style {
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.114);
+  border: rgb(255, 0, 0) 1px solid;
+}
+.btn-style:hover {
+  background: rgb(215, 217, 215);
+}
+
+#convert-btn {
+  animation: btn-color-fade 1s ease-in-out 0s infinite none alternate;
+}
+#convert-btn:hover {
+  background: #f9ff81;
+  animation: none;
+}
+@keyframes btn-color-fade {
+  to {
+    background: #f9ff81;
+  }
+}
+
+#preview-box {
+  display: none;
+  height: 250px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 2px rgb(124, 118, 143);
+  object-fit: contain;
+  background: #fff;
+}

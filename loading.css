@@ -1,0 +1,38 @@
+.loading-box {
+  display: inline-block;
+  padding: 0;
+  margin-inline: 10px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+
+.right-loading {
+  animation: rotate360 1s linear 0s infinite normal none;
+  border-right: #333333 solid 2px;
+}
+.left-loading {
+  border-left: #333333 solid 2px;
+  animation: rotate-360 1s linear 0s infinite normal none;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-360 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
